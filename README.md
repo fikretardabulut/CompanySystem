@@ -1,70 +1,62 @@
-<h1 align="center">🚀 Proje Adı</h1>
+<h1 align="center">🏢 CompanySystem</h1>
 
 <p align="center">
-  <b>Kısa ama çarpıcı bir açıklama.</b><br>
-  <i>Bu proje, [X problemini] çözen, [Y teknolojisiyle] geliştirilmiş modern bir çözümdür.</i>
+  Kurumsal şirketler için geliştirilen, kapsamlı ve modüler C# şirket yönetim sistemi.<br>
+  Kullanıcı yönetimi, finansal işlemler, görev takibi, departman yapısı ve çok daha fazlası.
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/.NET-8.0-blue.svg" />
   <img src="https://img.shields.io/badge/status-active-brightgreen.svg" />
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" />
   <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" />
 </p>
 
 ---
 
-## 🧠 İçindekiler
+## 🎯 Genel Bilgi
 
-- [🎯 Proje Hakkında](#-proje-hakkında)
-- [🧩 Özellikler](#-özellikler)
-- [🖼️ Önizleme / Demo](#️-önizleme--demo)
-- [🛠️ Kurulum ve Başlatma](#️-kurulum-ve-başlatma)
-- [⚙️ Yapılandırma](#️-yapılandırma)
-- [📁 Proje Yapısı](#-proje-yapısı)
-- [🧪 Testler](#-testler)
-- [📌 Yol Haritası](#-yol-haritası)
-- [🙋‍♀️ Katkı Sağla](#-katkı-sağla)
-- [🧑‍💻 Geliştirici](#-geliştirici)
-- [📄 Lisans](#-lisans)
+**CompanySystem**, C# ve ASP.NET Core ile geliştirilen, şirketlerin operasyonel süreçlerini tek panelden yönetmesini sağlayan açık kaynaklı bir platformdur.
+
+- 👥 Personel / kullanıcı yönetimi
+- 🧾 Fatura, kasa, gelir/gider modülleri
+- 📅 Görev ve toplantı takibi
+- 🏢 Departman ve yetkilendirme sistemi
+- 📈 Dashboard ve raporlama
 
 ---
 
-## 🎯 Proje Hakkında
+## 🧰 Teknoloji Yığını
 
-Bu proje, modern teknolojilerle geliştirilen, esnek, ölçeklenebilir ve performans odaklı bir çözümdür. Ana hedef:
-
-- [ ] Kurumsal kullanımda güvenilirlik
-- [ ] Son kullanıcı dostu deneyim
-- [ ] Kolayca entegre edilebilir yapı
-
----
-
-## 🧩 Özellikler
-
-- 🌐 Çoklu domain / çoklu dil desteği
-- 🧱 Katmanlı mimari
-- 🚀 Performans optimizasyonu (Code Splitting, Cache, SSR)
-- 🔒 Gelişmiş güvenlik (CSRF, XSS, Rate Limit)
-- 🧠 Otomatik güncelleme / versiyonlama
-- 📊 Analytics / logging entegrasyonu (opsiyonel)
-- 🔌 3rd party API bağlantısı (Stripe, Google API, vs.)
+| Teknoloji           | Açıklama                           |
+|---------------------|------------------------------------|
+| ASP.NET Core        | Backend & API                      |
+| Entity Framework    | ORM / Database bağlantısı          |
+| SQL Server / SQLite | Veritabanı                         |
+| Razor Pages / Blazor| UI / Frontend                      |
+| Identity / JWT      | Kimlik doğrulama & yetkilendirme   |
 
 ---
 
-## 🖼️ Önizleme / Demo
+## ⚙️ Kurulum
 
-> 🎥 Kısa bir tanıtım videosu veya GIF oldukça etkileyici olur.
+### Gereksinimler
 
-![demo-gif](./demo.gif)
+- .NET 8 SDK
+- SQL Server (veya SQLite)
+- Visual Studio 2022+ veya Rider
 
-🔗 **Canlı Demo**: [https://demo.ornek.com](https://demo.ornek.com)
-
----
-
-## 🛠️ Kurulum ve Başlatma
-
-### 1. Depoyu klonla
+### Kurulum Adımları
 
 ```bash
-git clone https://github.com/fikretardabulut/proje-adi.git
-cd proje-adi
+# Depoyu klonla
+git clone https://github.com/fikretardabulut/CompanySystem.git
+cd CompanySystem
+
+# (Opsiyonel) Veritabanı yapılandırmasını güncelle
+# appsettings.json veya appsettings.Development.json
+
+# Veritabanını oluştur
+dotnet ef database update
+
+# Uygulamayı çalıştır
+dotnet run
